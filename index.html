@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Welspear - Wonders Of Kuala Lumpur Half Day Private Tour</title>
+<meta name="description" content="Welspear Elite Tours">
+<!-- Share preview (WhatsApp, Facebook). Once the site has its web address, put the full address in front of images/share-preview.jpg, e.g. https://welspear-elite.netlify.app/images/share-preview.jpg -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wonders of Kuala Lumpur · Private Half-Day Tour">
+<meta property="og:description" content="Six highlights of KL in 4 hours with your own driver-guide and hotel pickup. Rated 4.9/5 by travellers.">
+<meta property="og:url" content="https://raaghavendraaramesh.github.io/welspear-website/">
+<meta property="og:image" content="https://raaghavendraaramesh.github.io/welspear-website/images/share-preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: full-bleed photo hero with text over it, a light facts bar, then the route as a photo timeline beside a sticky booking card */
+/* Tropical modern: sand-dollar ground, rainforest emerald for structure, sunset amber for every call to action, Andaman teal as the cool second voice */
+:root {
+  --bg: #f6f1e7;          /* sand dollar */
+  --surface: #fffdf8;
+  --tint: #e2f1ee;        /* Andaman teal, washed */
+  --ink: #283035;         /* charcoal slate */
+  --muted: #5d676b;
+  --line: #e5dccb;
+  --primary: #0e6b4f;     /* rainforest emerald */
+  --primary-ink: #ffffff;
+  --teal: #12797e;        /* Andaman teal */
+  --amber: #f3a136;       /* sunset amber */
+  --amber-deep: #e5821f;
+  --amber-ink: #2a1a05;
+  --on-photo: #ffffff;
+  --scrim: 6, 38, 30;     /* deep rainforest, used in rgba() over photos */
+  --font-display: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+  --font-body: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --radius: 16px;
+  --shadow: 0 24px 48px -30px rgba(14, 107, 79, 0.45);
+  /* Hero photo: swap this path when the final hero image arrives */
+  --hero-photo: url("images/batu-caves.jpg");
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1715; --surface: #15211e; --tint: #16302c; --ink: #eef2ec; --muted: #a2b1ab; --line: #263631;
+    --primary: #3cc493; --primary-ink: #06261c; --teal: #52c3c6; --shadow: 0 24px 48px -30px rgba(0, 0, 0, 0.8); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1715; --surface: #15211e; --tint: #16302c; --ink: #eef2ec; --muted: #a2b1ab; --line: #263631;
+  --primary: #3cc493; --primary-ink: #06261c; --teal: #52c3c6; --shadow: 0 24px 48px -30px rgba(0, 0, 0, 0.8); color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.65; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 600; text-wrap: balance; line-height: 1.08; margin: 0; letter-spacing: -0.01em; }
+p { margin: 0; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; border-radius: 4px; }
+.wrap { max-width: 1160px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.eyebrow { font-size: 0.74rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--primary); }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; border-radius: 999px; padding: 14px 26px; font: 700 0.92rem var(--font-body); letter-spacing: 0.02em; text-decoration: none; cursor: pointer; transition: transform 0.2s ease, filter 0.2s ease; }
+.btn:hover { transform: translateY(-1px); }
+.btn-cta { background: linear-gradient(135deg, var(--amber), var(--amber-deep)); color: var(--amber-ink); box-shadow: 0 10px 24px -12px rgba(229, 130, 31, 0.7); }
+.btn-glass { background: rgba(255, 255, 255, 0.14); color: var(--on-photo); border: 1px solid rgba(255, 255, 255, 0.45); backdrop-filter: blur(6px); }
+
+/* Hero */
+.hero { position: relative; color: var(--on-photo); min-height: min(86vh, 760px); display: flex; flex-direction: column; background-color: rgb(var(--scrim)); background-image: linear-gradient(90deg, rgba(var(--scrim), 0.78) 0%, rgba(var(--scrim), 0.45) 45%, rgba(var(--scrim), 0) 75%), linear-gradient(180deg, rgba(var(--scrim), 0.5) 0%, rgba(var(--scrim), 0.05) 28%, rgba(var(--scrim), 0.15) 50%, rgba(var(--scrim), 0.7) 100%), var(--hero-photo); background-size: cover; background-position: center 35%; }
+.hero video.bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+.hero > * { position: relative; z-index: 1; }
+.nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 18px; }
+.brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; }
+.brand b { font-family: var(--font-display); font-weight: 600; font-size: 1.75rem; letter-spacing: 0.02em; }
+.brand span { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; opacity: 0.8; }
+.nav-links { display: flex; gap: 28px; font-size: 0.9rem; font-weight: 500; }
+.nav-links a { text-decoration: none; opacity: 0.9; }
+.nav-links a:hover { opacity: 1; text-decoration: underline; text-underline-offset: 6px; text-decoration-color: var(--amber); }
+@media (max-width: 760px) { .nav-links { display: none; } }
+.hero-copy { margin-top: auto; padding-block: 48px 56px; }
+.hero-copy .eyebrow { color: var(--amber); }
+.hero h1 { font-size: clamp(2.8rem, 7vw, 5.4rem); margin-top: 14px; max-width: 12ch; text-shadow: 0 2px 24px rgba(0, 0, 0, 0.3); }
+.hero h1 em { font-style: italic; font-weight: 500; color: var(--amber); }
+.hero .lede { margin-top: 18px; max-width: 36em; font-size: 1.1rem; opacity: 0.94; }
+.rating-line { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-top: 22px; font-size: 0.95rem; }
+.stars { color: var(--amber); letter-spacing: 2px; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+
+/* Facts */
+.facts { background: var(--surface); border-bottom: 1px solid var(--line); }
+.facts .wrap { display: grid; grid-template-columns: repeat(5, 1fr); }
+.fact { padding: 22px 18px; border-right: 1px solid var(--line); min-width: 0; }
+.fact:first-child { padding-left: 0; }
+.fact:last-child { border-right: 0; }
+.fact .k { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+.fact .v { font-weight: 600; margin-top: 4px; }
+@media (max-width: 860px) {
+  .facts .wrap { grid-template-columns: repeat(2, 1fr); }
+  .fact, .fact:first-child { padding: 16px 12px; border-bottom: 1px solid var(--line); }
+  .fact:nth-child(2n) { border-right: 0; }
+  .fact:last-child { grid-column: 1 / -1; border-bottom: 0; }
+}
+
+/* Main */
+main .wrap { display: grid; grid-template-columns: minmax(0, 1fr) 350px; gap: 64px; padding-block: 72px; align-items: start; }
+@media (max-width: 980px) { main .wrap { grid-template-columns: 1fr; gap: 48px; } }
+section + section { margin-top: 88px; }
+.sec-head { display: grid; gap: 10px; margin-bottom: 32px; }
+.sec-head h2 { font-size: clamp(2rem, 4vw, 2.8rem); }
+.sec-head p { color: var(--muted); max-width: 60ch; }
+.about p { max-width: 65ch; font-size: 1.05rem; }
+.about p + p { margin-top: 14px; }
+
+/* Itinerary */
+.route { list-style: none; margin: 0; padding: 0; position: relative; }
+.route::before { content: ""; position: absolute; left: 21px; top: 10px; bottom: 10px; width: 1px; background: linear-gradient(var(--primary), var(--teal) 60%, var(--line)); }
+.stop { position: relative; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 22px; padding-bottom: 40px; }
+.stop:last-child { padding-bottom: 0; }
+.pin { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--primary); color: var(--primary-ink); border: 3px solid var(--bg); font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; z-index: 1; }
+.pin.end { font-family: var(--font-body); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.08em; color: var(--muted); background: var(--surface); border: 1px solid var(--line); }
+.stop-body { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 24px; align-items: center; }
+.stop-body.no-photo { grid-template-columns: 1fr; }
+.stop h3 { font-size: 1.65rem; }
+.stop .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.chip { font-size: 0.76rem; font-weight: 600; padding: 4px 12px; border-radius: 999px; background: var(--tint); color: var(--teal); }
+.chip.inc { background: transparent; border: 1px solid var(--amber-deep); color: var(--ink); }
+.stop p.desc { color: var(--muted); margin-top: 10px; max-width: 52ch; }
+.photo { aspect-ratio: 4 / 3; max-width: 100%; border-radius: 12px; overflow: hidden; background: var(--tint); box-shadow: var(--shadow); }
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s ease; }
+.stop:hover .photo img { transform: scale(1.04); }
+@media (max-width: 620px) { .stop-body { grid-template-columns: 1fr; gap: 16px; } .photo { aspect-ratio: 16 / 10; } }
+
+/* Included */
+.incl { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.incl > div { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+.incl h3 { font-family: var(--font-body); font-weight: 700; font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 14px; color: var(--muted); }
+.incl ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.incl li { display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 8px; }
+.incl li::before { content: "✓"; color: var(--primary); font-weight: 700; }
+.incl .no li::before { content: "–"; color: var(--muted); }
+.access { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+.access span { font-size: 0.86rem; padding: 6px 14px; border-radius: 999px; background: var(--tint); color: var(--teal); font-weight: 600; }
+@media (max-width: 560px) { .incl { grid-template-columns: 1fr; } }
+
+/* Reviews */
+.score { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; margin-bottom: 28px; }
+.score .big { font-family: var(--font-display); font-size: 4rem; line-height: 1; font-weight: 600; }
+.score .stars { color: var(--amber); font-size: 1.2rem; }
+.score small { color: var(--muted); font-size: 0.92rem; }
+.reviews { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.review { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; display: grid; gap: 14px; align-content: space-between; }
+.review q { quotes: none; }
+.review.wide { grid-column: 1 / -1; background: var(--tint); border-color: transparent; }
+.review.wide q { font-family: var(--font-display); font-size: 1.45rem; line-height: 1.35; }
+.review footer { display: flex; justify-content: space-between; gap: 12px; font-size: 0.85rem; color: var(--muted); }
+.review footer b { color: var(--ink); font-weight: 600; }
+.source-note { margin-top: 18px; font-size: 0.82rem; color: var(--muted); }
+.source-note a { color: var(--teal); }
+@media (max-width: 640px) { .reviews { grid-template-columns: 1fr; } }
+
+/* Booking card */
+.book { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 24px); background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 28px; display: grid; gap: 20px; box-shadow: var(--shadow); }
+@media (max-width: 980px) { .book { position: static; } }
+.book .eyebrow { margin-bottom: -10px; }
+.price { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+.price .from { font-size: 0.85rem; color: var(--muted); }
+.price .amt { font-family: var(--font-display); font-size: 2.6rem; font-weight: 600; line-height: 1; font-variant-numeric: tabular-nums; }
+.book dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 10px 16px; font-size: 0.92rem; padding-block: 16px; border-block: 1px solid var(--line); }
+.book dt { color: var(--muted); }
+.book dd { margin: 0; text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.perks { display: grid; gap: 12px; font-size: 0.88rem; color: var(--muted); }
+.perks b { display: block; color: var(--ink); }
+.book .btn { width: 100%; }
+.phone { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-size: 0.88rem; color: var(--muted); }
+.phone code { font-family: var(--font-body); font-weight: 700; color: var(--ink); user-select: all; }
+.copy { background: none; border: 1px solid var(--line); color: var(--ink); border-radius: 999px; padding: 6px 14px; font: 600 0.8rem var(--font-body); cursor: pointer; }
+
+/* Route map */
+.map-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; margin-bottom: 44px; }
+.map-wrap { overflow-x: auto; }
+.map-wrap svg { display: block; width: 100%; min-width: 300px; height: auto; }
+.m-land { fill: var(--tint); }
+.m-hill { fill: var(--primary); opacity: 0.16; }
+.m-park { fill: var(--primary); opacity: 0.1; }
+.m-river { fill: none; stroke: var(--teal); stroke-width: 3; opacity: 0.45; stroke-linecap: round; }
+.m-route { fill: none; stroke: var(--amber-deep); stroke-width: 2.5; stroke-dasharray: 7 6; stroke-linecap: round; }
+.m-stop circle { fill: var(--primary); stroke: var(--surface); stroke-width: 3; }
+.m-stop text.n { fill: var(--primary-ink); font: 600 15px var(--font-display); text-anchor: middle; dominant-baseline: central; }
+.m-stop text.l { fill: var(--ink); font: 700 12px var(--font-body); }
+.m-stop text.s { fill: var(--muted); font: 500 10.5px var(--font-body); }
+.m-hotel rect { fill: var(--amber); }
+.m-hotel text { fill: var(--amber-ink); font: 700 10px var(--font-body); text-anchor: middle; dominant-baseline: central; letter-spacing: 0.06em; }
+.m-label { fill: var(--teal); font: italic 500 12px var(--font-body); }
+.m-faint { fill: var(--muted); font: 600 10px var(--font-body); letter-spacing: 0.14em; }
+.m-compass path { fill: var(--ink); }
+.m-compass text { fill: var(--ink); font: 700 11px var(--font-body); text-anchor: middle; }
+a.m-stop:hover circle, a.m-stop:focus circle { fill: var(--amber-deep); }
+.map-legend { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 14px; font-size: 0.84rem; color: var(--muted); }
+.map-legend span { display: inline-flex; align-items: center; gap: 8px; }
+.map-legend i { display: inline-block; width: 22px; height: 0; border-top: 2.5px dashed var(--amber-deep); }
+.map-legend i.dot { width: 12px; height: 12px; border: 0; border-radius: 50%; background: var(--primary); }
+.map-legend i.riv { border-top: 3px solid var(--teal); opacity: 0.6; }
+
+/* When to go */
+.months { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 4px; margin-bottom: 8px; }
+.mo { display: grid; gap: 6px; text-align: center; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; color: var(--muted); }
+.mo .bar { height: 30px; border-radius: 6px; background: var(--tint); position: relative; }
+.mo .bar.wet { background: var(--teal); opacity: 0.55; }
+.mo .bar .ev { position: absolute; left: 50%; top: 50%; width: 10px; height: 10px; margin: -5px 0 0 -5px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 0 2px var(--surface); }
+.months-key { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 0.82rem; color: var(--muted); margin-bottom: 28px; }
+.months-key span { display: inline-flex; align-items: center; gap: 8px; }
+.months-key i { width: 14px; height: 14px; border-radius: 4px; display: inline-block; }
+.seasons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.season { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; display: grid; gap: 8px; align-content: start; }
+.season .when { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--teal); }
+.season h3 { font-size: 1.4rem; }
+.season p { color: var(--muted); font-size: 0.95rem; }
+.season.tip { grid-column: 1 / -1; background: var(--primary); color: var(--primary-ink); border-color: transparent; }
+.season.tip .when, .season.tip p { color: var(--primary-ink); opacity: 0.9; }
+@media (max-width: 640px) { .seasons { grid-template-columns: 1fr; } .mo { font-size: 0.6rem; letter-spacing: 0; } }
+
+/* FAQ */
+.faq { display: grid; gap: 10px; }
+.faq details { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+.faq summary { list-style: none; cursor: pointer; padding: 18px 52px 18px 20px; font-weight: 600; position: relative; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font: 400 1.6rem/1 var(--font-display); color: var(--primary); transition: transform 0.2s ease; }
+.faq details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+.faq details[open] { border-color: var(--primary); }
+.faq .a { padding: 0 20px 20px; color: var(--muted); max-width: 65ch; display: grid; gap: 10px; }
+
+/* Footer */
+.foot { background: var(--primary); color: var(--primary-ink); }
+.foot .wrap { padding-block: 44px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.88rem; }
+.foot p { opacity: 0.85; }
+.foot .brand b { font-size: 1.5rem; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-copy > * { animation: rise 0.8s cubic-bezier(.2,.7,.2,1) both; }
+  .hero-copy > *:nth-child(2) { animation-delay: 0.06s; } .hero-copy > *:nth-child(3) { animation-delay: 0.12s; }
+  .hero-copy > *:nth-child(4) { animation-delay: 0.18s; } .hero-copy > *:nth-child(5) { animation-delay: 0.24s; }
+  @keyframes rise { from { transform: translateY(14px); } to { transform: none; } }
+}
+@media (prefers-reduced-motion: reduce) { .btn, .photo img { transition: none; } }
+</style>
+</head>
+<body>
+
+<!-- HERO: to use a video instead, add <video class="bg" src="images/hero.mp4" autoplay muted loop playsinline></video> as the first child of .hero -->
+<header class="hero" id="top">
+  <nav class="nav" aria-label="Main">
+    <div class="wrap">
+      <a class="brand" href="#top"><b>Welspear Elite</b></a>
+      <div class="nav-links">
+        <a href="#itinerary">Itinerary</a>
+        <a href="#when">When to go</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#book">Book</a>
+      </div>
+    </div>
+  </nav>
+  <div class="hero-copy wrap">
+    <div class="eyebrow">Private half-day tour · Kuala Lumpur</div>
+    <h1>Six wonders of KL, <em>one golden morning</em></h1>
+    <p class="lede">Twin towers, a limestone cave temple, red lanterns, colonial squares, local crafts and hand-drawn batik. Your own guide and your own car, from your hotel door.</p>
+    <div class="rating-line">
+      <span class="stars" aria-hidden="true">★★★★★</span>
+      <span><b>4.9 / 5</b> from 20 traveller reviews</span>
+      <span>· 100% recommend</span>
+    </div>
+    <div class="hero-cta">
+      <a class="btn btn-cta" href="#book">Book Now</a>
+      <a class="btn btn-glass" href="#itinerary">See the six stops</a>
+    </div>
+  </div>
+</header>
+
+<div class="facts">
+  <div class="wrap">
+    <div class="fact"><div class="k">Duration</div><div class="v">4 hours</div></div>
+    <div class="fact"><div class="k">Group</div><div class="v">Private, your party only</div></div>
+    <div class="fact"><div class="k">Pickup</div><div class="v">Hotel, air-conditioned car</div></div>
+    <div class="fact"><div class="k">Language</div><div class="v">English</div></div>
+    <div class="fact"><div class="k">Cancellation</div><div class="v">Free up to 24 h before</div></div>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+    <div style="min-width:0">
+      <section class="about">
+        <div class="sec-head">
+          <span class="eyebrow">About the tour</span>
+          <h2>Culture, heritage and the city's landmarks</h2>
+        </div>
+        <p>Discover Kuala Lumpur on a tour run only for your group. A local Welspear Elite driver-guide collects you from your hotel and takes you through the city's best-known sights, its temples and its craft traditions, at a comfortable pace.</p>
+        <p>It's made for first-time visitors and anyone short on time who wants the highlights of KL without a shared coach tour. Ages 1 to 99 are welcome, and the car takes wheelchairs and pushchairs.</p>
+      </section>
+
+      <section id="itinerary">
+        <div class="sec-head">
+          <span class="eyebrow">Itinerary · 6 stops</span>
+          <h2>Your route through the city</h2>
+          <p>Stop times are approximate. Your guide adjusts the order around traffic and opening hours. Batu Caves is the furthest stop, about 13 km north of the city centre.</p>
+        </div>
+        <div class="map-card">
+          <div class="map-wrap">
+          <svg viewBox="0 0 600 430" role="img" aria-labelledby="map-title">
+            <title id="map-title">Route map: hotel, Petronas Towers, Batu Caves, Thean Hou Temple, Dataran Merdeka, Central Market, East Coast Batik, back to hotel</title>
+            <rect class="m-land" x="0" y="0" width="600" height="430" rx="12"></rect>
+            <path class="m-hill" d="M120 20 C160 6 240 10 270 34 C290 52 262 92 220 96 C170 100 120 88 104 62 C96 46 102 28 120 20 Z"></path>
+            <path class="m-park" d="M150 268 C174 254 214 262 220 288 C226 314 200 330 174 324 C150 318 136 286 150 268 Z"></path>
+            <text class="m-faint" x="182" y="292" text-anchor="middle">PERDANA</text><text class="m-faint" x="182" y="304" text-anchor="middle">GARDENS</text>
+            <path class="m-river" d="M330 60 C324 120 318 180 300 230 C292 256 292 274 300 292 C280 330 240 360 180 410"></path>
+            <path class="m-river" d="M560 200 C500 230 430 260 360 280 C330 288 312 290 300 292"></path>
+            <text class="m-label" x="338" y="118">Gombak River</text>
+            <text class="m-label" x="372" y="254" transform="rotate(-19 372 254)">Klang River</text>
+            <path class="m-route" d="M490 318 C484 296 472 280 463 262 C450 150 330 70 194 64 C130 150 170 300 233 360 C250 330 262 304 270 284 C292 294 312 302 325 306 C350 330 390 360 420 380 C450 370 480 350 494 330"></path>
+            <g class="m-hotel" aria-label="Start and end: your hotel">
+              <rect x="470" y="318" width="64" height="24" rx="12"></rect><text x="502" y="330">HOTEL</text>
+            </g>
+      <a class="m-stop" href="#stop-1" aria-label="Stop 1: Petronas Towers">
+        <circle cx="463" cy="262" r="15"></circle><text class="n" x="463" y="262">1</text>
+        <text class="l" x="484" y="258" text-anchor="start">Petronas Towers</text><text class="s" x="484" y="272" text-anchor="start">KLCC · 45 min</text>
+      </a>
+      <a class="m-stop" href="#stop-2" aria-label="Stop 2: Batu Caves">
+        <circle cx="194" cy="64" r="15"></circle><text class="n" x="194" y="64">2</text>
+        <text class="l" x="172" y="60" text-anchor="end">Batu Caves</text><text class="s" x="172" y="74" text-anchor="end">13 km north · 60 min</text>
+      </a>
+      <a class="m-stop" href="#stop-3" aria-label="Stop 3: Thean Hou Temple">
+        <circle cx="233" cy="360" r="15"></circle><text class="n" x="233" y="360">3</text>
+        <text class="l" x="254" y="368" text-anchor="start">Thean Hou Temple</text><text class="s" x="254" y="382" text-anchor="start">Robson Hill · 30 min</text>
+      </a>
+      <a class="m-stop" href="#stop-4" aria-label="Stop 4: Dataran Merdeka">
+        <circle cx="270" cy="284" r="15"></circle><text class="n" x="270" y="284">4</text>
+        <text class="l" x="254" y="236" text-anchor="end">Dataran Merdeka</text><text class="s" x="254" y="250" text-anchor="end">30 min</text>
+      </a>
+      <a class="m-stop" href="#stop-5" aria-label="Stop 5: Central Market">
+        <circle cx="325" cy="306" r="15"></circle><text class="n" x="325" y="306">5</text>
+        <text class="l" x="344" y="334" text-anchor="start">Central Market</text><text class="s" x="344" y="348" text-anchor="start">45 min</text>
+      </a>
+      <a class="m-stop" href="#stop-6" aria-label="Stop 6: East Coast Batik">
+        <circle cx="420" cy="380" r="15"></circle><text class="n" x="420" y="380">6</text>
+        <text class="l" x="442" y="384" text-anchor="start">East Coast Batik</text><text class="s" x="442" y="398" text-anchor="start">30 min</text>
+      </a>
+            <g class="m-compass" transform="translate(556 52)">
+              <path d="M0 -22 L7 2 L0 -4 L-7 2 Z"></path><text x="0" y="18">N</text>
+            </g>
+          </svg>
+          </div>
+          <div class="map-legend">
+            <span><i class="dot"></i>Stop, tap to jump to it</span>
+            <span><i></i>Your drive</span>
+            <span><i class="riv"></i>Rivers</span>
+            <span>Illustrated map, not to scale</span>
+          </div>
+        </div>
+        <ol class="route">
+          <li class="stop">
+            <span class="pin end">START</span>
+            <div class="stop-body no-photo">
+              <div><h3>Hotel pickup</h3><p class="desc">Your guide meets you in your hotel lobby in Kuala Lumpur. Airport and Port Klang pickups aren't included.</p></div>
+            </div>
+          </li>
+          <li class="stop" id="stop-1">
+            <span class="pin">1</span>
+            <div class="stop-body">
+              <div class="photo"><img src="images/petronas-towers.jpg" alt="Petronas Twin Towers against a blue sky" loading="lazy" style="object-position: center 22%"></div>
+              <div>
+                <h3>Petronas Twin Towers</h3>
+                <div class="meta"><span class="chip">45 min</span><span class="chip">KLCC</span></div>
+                <p class="desc">The 88-storey steel towers at the heart of KLCC. Photos from the park side and time to look around the base.</p>
+              </div>
+            </div>
+          </li>
+          <li class="stop" id="stop-2">
+            <span class="pin">2</span>
+            <div class="stop-body">
+              <div class="photo"><img src="images/batu-caves.jpg" alt="Golden Lord Murugan statue beside the rainbow steps of Batu Caves" loading="lazy"></div>
+              <div>
+                <h3>Batu Caves</h3>
+                <div class="meta"><span class="chip">60 min</span><span class="chip">272 steps</span></div>
+                <p class="desc">The rainbow staircase climbs to a Hindu temple inside a limestone hill, watched over by the giant golden statue of Lord Murugan.</p>
+              </div>
+            </div>
+          </li>
+          <li class="stop" id="stop-3">
+            <span class="pin">3</span>
+            <div class="stop-body">
+              <div class="photo"><img src="images/thean-hou-temple.jpg" alt="Red lanterns over Thean Hou Temple at sunset" loading="lazy"></div>
+              <div>
+                <h3>Thean Hou Temple</h3>
+                <div class="meta"><span class="chip">30 min</span><span class="chip inc">Admission included</span></div>
+                <p class="desc">A six-tiered Chinese temple on Robson Hill, strung with red lanterns and looking out over the city.</p>
+              </div>
+            </div>
+          </li>
+          <li class="stop" id="stop-4">
+            <span class="pin">4</span>
+            <div class="stop-body">
+              <div class="photo"><img src="images/dataran-merdeka.jpg" alt="Sultan Abdul Samad Building and its clock tower lit at night beside Dataran Merdeka" loading="lazy" style="object-position: center 78%"></div>
+              <div>
+                <h3>Dataran Merdeka</h3>
+                <div class="meta"><span class="chip">30 min</span><span class="chip">Independence Square</span></div>
+                <p class="desc">Where Malaysia declared independence in 1957, framed by the copper domes of the Sultan Abdul Samad Building.</p>
+              </div>
+            </div>
+          </li>
+          <li class="stop" id="stop-5">
+            <span class="pin">5</span>
+            <div class="stop-body">
+              <div class="photo"><img src="images/central-market.jpg" alt="Art deco front of Central Market Kuala Lumpur" loading="lazy"></div>
+              <div>
+                <h3>Central Market</h3>
+                <div class="meta"><span class="chip">45 min</span><span class="chip">Since 1888</span></div>
+                <p class="desc">An art deco market hall full of local handicrafts, songket, wood carving and souvenirs to take home.</p>
+              </div>
+            </div>
+          </li>
+          <li class="stop" id="stop-6">
+            <span class="pin">6</span>
+            <div class="stop-body">
+              <div class="photo"><img src="images/east-coast-batik.jpg" alt="Batik workshop hall with hanging batik cloths" loading="lazy"></div>
+              <div>
+                <h3>East Coast Batik</h3>
+                <div class="meta"><span class="chip">30 min</span><span class="chip">Craft workshop</span></div>
+                <p class="desc">See how Malaysian batik is made, from wax drawn by hand with a canting to the final dye bath.</p>
+              </div>
+            </div>
+          </li>
+          <li class="stop">
+            <span class="pin end">END</span>
+            <div class="stop-body no-photo">
+              <div><h3>Drop-off at your hotel</h3><p class="desc">You return to your starting point, usually around four hours after pickup.</p></div>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="included">
+        <div class="sec-head">
+          <span class="eyebrow">Good to know</span>
+          <h2>What's included</h2>
+        </div>
+        <div class="incl">
+          <div>
+            <h3>Included</h3>
+            <ul>
+              <li>Hotel pickup and drop-off in an air-conditioned vehicle</li>
+              <li>English-speaking driver and guide</li>
+              <li>All tolls, tax and service charges</li>
+              <li>Entry to Thean Hou Temple</li>
+            </ul>
+          </div>
+          <div class="no">
+            <h3>Not included</h3>
+            <ul>
+              <li>Meals</li>
+              <li>Pickup at the airport or Port Klang</li>
+            </ul>
+          </div>
+        </div>
+        <div class="access" aria-label="Accessibility">
+          <span>Wheelchair accessible</span>
+          <span>Pushchair accessible</span>
+          <span>Infant seats available</span>
+          <span>Near public transport</span>
+          <span>Mobile ticket</span>
+        </div>
+      </section>
+
+      <section id="when">
+        <div class="sec-head">
+          <span class="eyebrow">Visit tips by season</span>
+          <h2>When to go</h2>
+          <p>Kuala Lumpur is warm all year, usually 31 to 33°C by midday. What changes is the rain and the festival calendar.</p>
+        </div>
+        <div class="months" aria-hidden="true"><div class="mo"><div class="bar"><span class="ev"></span></div>JAN</div><div class="mo"><div class="bar"><span class="ev"></span></div>FEB</div><div class="mo"><div class="bar wet"></div>MAR</div><div class="mo"><div class="bar wet"></div>APR</div><div class="mo"><div class="bar"></div>MAY</div><div class="mo"><div class="bar"></div>JUN</div><div class="mo"><div class="bar"></div>JUL</div><div class="mo"><div class="bar"><span class="ev"></span></div>AUG</div><div class="mo"><div class="bar"></div>SEP</div><div class="mo"><div class="bar wet"><span class="ev"></span></div>OCT</div><div class="mo"><div class="bar wet"><span class="ev"></span></div>NOV</div><div class="mo"><div class="bar wet"></div>DEC</div></div>
+        <div class="months-key">
+          <span><i style="background:var(--teal);opacity:.55"></i>Wetter months, more afternoon storms</span>
+          <span><i style="background:var(--amber);border-radius:50%"></i>Major festival</span>
+        </div>
+        <div class="seasons">
+          <article class="season tip">
+            <span class="when">All year</span>
+            <h3>Take the 8:30 am start</h3>
+            <p>Mornings are cooler and drier. Heavy rain in KL usually arrives as short thunderstorms in the mid-to-late afternoon, so the morning tour avoids most of it, and Batu Caves is calmer before the coach groups arrive.</p>
+          </article>
+          <article class="season">
+            <span class="when">Late Jan to early Feb</span>
+            <h3>Thaipusam at Batu Caves</h3>
+            <p>Over a million pilgrims and devotees carrying kavadi climb to the temple. It's unforgettable, but roads close and the steps are packed. Ask us before booking on the festival day itself.</p>
+          </article>
+          <article class="season">
+            <span class="when">Jan to Feb</span>
+            <h3>Chinese New Year</h3>
+            <p>Thean Hou Temple is at its most beautiful, with thousands of extra red lanterns. Expect crowds, and note some Central Market shops close for the first few days.</p>
+          </article>
+          <article class="season">
+            <span class="when">Mar to Apr, Oct to Dec</span>
+            <h3>The wetter months</h3>
+            <p>Storms are stronger and more frequent. Tours still run; your guide reorders the stops so you're under cover when the rain comes. Bring a light umbrella.</p>
+          </article>
+          <article class="season">
+            <span class="when">Around 31 August</span>
+            <h3>Merdeka, National Day</h3>
+            <p>Flags line the streets around Dataran Merdeka. The square can close for parade rehearsals in August, in which case we view it from the edge.</p>
+          </article>
+          <article class="season">
+            <span class="when">Dates shift each year</span>
+            <h3>Ramadan and Hari Raya</h3>
+            <p>Evening food bazaars fill the city during Ramadan, and some shops keep shorter hours. Ramadan moves about 11 days earlier every year, so check the dates for your trip.</p>
+          </article>
+          <article class="season">
+            <span class="when">Oct or Nov</span>
+            <h3>Deepavali</h3>
+            <p>The Festival of Lights brings colourful kolam and oil lamps to Batu Caves and Little India. A lovely time to visit.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="reviews">
+        <div class="sec-head">
+          <span class="eyebrow">Traveller reviews</span>
+          <h2>What guests say</h2>
+        </div>
+        <div class="score">
+          <span class="big" id="rating-value">4.9</span>
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <small><span id="rating-count">20</span> reviews · 100% recommend</small>
+        </div>
+        <div class="reviews" id="review-list">
+          <article class="review wide">
+            <q>An excellent city tour! Our guide phoned me to offer complimentary hotel pick up after I booked. The guide provided excellent commentary with historical background. Excellent value for the money!</q>
+            <footer><b>Jeffrey F</b><span>Oct 2026</span></footer>
+          </article>
+          <article class="review">
+            <q>Our tour guide Ramesh was amazing. Would highly recommend as you get to see the main sites of Malaysia. Perfect way to see things if you're short on time.</q>
+            <footer><b>Kris &amp; Manisha</b><span>Nov 2026</span></footer>
+          </article>
+          <article class="review">
+            <q>A great tour to see the main sites of Kuala Lumpur, particularly if you are only here for a short time. It gives you just the right amount of time in each place.</q>
+            <footer><b>Deborah T</b><span>Oct 2026</span></footer>
+          </article>
+          <article class="review">
+            <q>Our guide, Mr. Ramesh, explained the history of Malaysia and the places we visited very clearly. A perfect tour for beginners in Kuala Lumpur.</q>
+            <footer><b>Daydream60712466050</b><span>Oct 2026</span></footer>
+          </article>
+          <article class="review">
+            <q>Jennifer was absolutely phenomenal. She took the time to get to know us and made us feel as though we were exploring the city with a longtime friend.</q>
+            <footer><b>Traveler674705</b><span>Oct 2026</span></footer>
+          </article>
+          <article class="review">
+            <q>Very knowledgeable and enthusiastic. His explanations of historical events and monuments were interesting and clear.</q>
+            <footer><b>Petr B</b><span>Oct 2026</span></footer>
+          </article>
+          <article class="review">
+            <q>You get to see all the main sights in one go. There is enough time to look around and walk through the places you visit.</q>
+            <footer><b>janajanberga</b><span>Oct 2026</span></footer>
+          </article>
+        </div>
+        <p class="source-note" id="review-source">Reviews from Tripadvisor, excerpted. Rating as of 5 Nov 2026. <a href="https://www.tripadvisor.com.my/AttractionProductReview-g298570-d34688361-Wonders_Of_Kuala_Lumpur_Half_Day_Private_Tour-Kuala_Lumpur_Wilayah_Persekutuan.html#REVIEWS" target="_blank" rel="noopener">Read all reviews</a></p>
+      </section>
+
+      <section id="faq">
+        <div class="sec-head">
+          <span class="eyebrow">Before you go</span>
+          <h2>Questions guests ask</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>What should I wear?</summary>
+            <div class="a"><p>Light, breathable clothes and comfortable walking shoes. Batu Caves and Thean Hou are working temples, so cover your shoulders and knees. If you forget, sarongs can be rented for a small fee at the foot of the Batu Caves steps.</p></div>
+          </details>
+          <details>
+            <summary>How hard are the 272 steps at Batu Caves?</summary>
+            <div class="a"><p>They're steep and take most people 10 to 15 minutes at an easy pace, with places to stop on the way. The climb is optional. You can stay at the base, see the golden statue up close and still enjoy the stop.</p></div>
+          </details>
+          <details>
+            <summary>Are the monkeys a problem?</summary>
+            <div class="a"><p>Long-tailed macaques live around the Batu Caves steps. They're used to people but will grab food, drinks and plastic bags. Keep snacks out of sight, hold on to phones and sunglasses, and don't feed them.</p></div>
+          </details>
+          <details>
+            <summary>What happens if it rains?</summary>
+            <div class="a"><p>The tour goes ahead. Several stops are partly or fully covered, and your guide will reorder the route to keep you dry during a downpour. KL storms are usually short.</p></div>
+          </details>
+          <details>
+            <summary>Is the tour suitable for children, older travellers or wheelchair users?</summary>
+            <div class="a"><p>Yes. The vehicle is wheelchair accessible and infant seats are available, so mention them when you book. The Batu Caves steps aren't wheelchair accessible, but the base area, the statue and every other stop are easy to reach.</p></div>
+          </details>
+          <details>
+            <summary>Are entrance fees included?</summary>
+            <div class="a"><p>Entry to Thean Hou Temple is included. Batu Caves' main temple cave, the Petronas Towers exterior, Dataran Merdeka and Central Market are free to visit. Meals and personal shopping aren't included.</p></div>
+          </details>
+          <details>
+            <summary>Where do you pick up?</summary>
+            <div class="a"><p>From your hotel lobby in Kuala Lumpur. Airport and Port Klang pickups aren't part of this tour. Your guide will contact you before the day to confirm the time and place.</p></div>
+          </details>
+          <details>
+            <summary>Can we spend longer at one stop?</summary>
+            <div class="a"><p>It's a private tour, so within the four hours your guide can stay longer where you're enjoying yourselves and move on sooner elsewhere. Just ask on the day.</p></div>
+          </details>
+          <details>
+            <summary>What if my plans change?</summary>
+            <div class="a"><p>Cancel up to 24 hours before your start time for a full refund.</p></div>
+          </details>
+        </div>
+      </section>
+    </div>
+
+    <aside class="book" id="book" aria-label="Booking">
+      <span class="eyebrow">Wonders of Kuala Lumpur</span>
+      <div class="price"><span class="amt" style="font-size:2rem">Book your private tour</span></div>
+      <dl>
+        <dt>Morning tour</dt><dd>8:30 am – 12:30 pm</dd>
+        <dt>Afternoon tour</dt><dd>2:00 pm – 6:00 pm</dd>
+        <dt>Duration</dt><dd>4 hours</dd>
+      </dl>
+      <div class="perks">
+        <div><b>Free cancellation</b>Full refund up to 24 hours before your start time (local time).</div>
+        <div><b>Private and personal</b>Only your group in the car, with your own driver-guide.</div>
+      </div>
+      <a class="btn btn-cta" target="_blank" rel="noopener" href="https://www.tripadvisor.com.my/AttractionProductReview-g298570-d34688361-Wonders_Of_Kuala_Lumpur_Half_Day_Private_Tour-Kuala_Lumpur_Wilayah_Persekutuan.html">Book Now</a>
+      <div class="phone">
+        <span>Contact us<br><a href="mailto:Velspear6@gmail.com" style="text-decoration:none"><code id="phone">Velspear6@gmail.com</code></a></span>
+        <button class="copy" id="copy-phone" type="button">Copy</button>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a class="brand" href="#top"><b>Welspear Elite</b><span>Sdn. Bhd.</span></a>
+    <p>Private tours of Kuala Lumpur · All tolls, tax and service charges included.</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('copy-phone').addEventListener('click', function () {
+  var btn = this, el = document.getElementById('phone');
+  function selectPhone() { var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Press Ctrl+C'; }
+  try {
+    navigator.clipboard.writeText(el.textContent).then(function () { btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy'; }, 1600); }, selectPhone);
+  } catch (e) { selectPhone(); }
+});
+</script>
+</body>
+</html>
